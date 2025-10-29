@@ -1,0 +1,223 @@
+<!--
+  Portfolio pour Kimberlyamber (Rabenarisoa Andoniaina)
+  - Modern, responsive HTML + Tailwind CDN
+  - Instructions : place ta photo dans le même dossier et renomme-la "profile.jpg"
+  - Conserver le lien ComeUp (modifier href="YOUR_COMEUP_LINK" avec ton URL ComeUp)
+  - Pour publier : déposer le dossier (index.html + profile.jpg) sur Netlify / GitHub Pages / Vercel
+-->
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kimberlyamber — Rédactrice & Correctrice</title>
+  <meta name="description" content="Portfolio professionnel de Kimberlyamber — Rédaction, correction, modération web. Contact : rabenarisoaando@gmail.com" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Lucide icons UMD -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    :root{
+      --accent: #FFB74D; /* orange doux */
+      --muted: #6B7280; /* gray-500 */
+      --navy: #0F172A;
+    }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .glass { background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.55)); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-gradient-to-b from-white via-slate-50 to-slate-100">
+
+  <!-- Wrapper -->
+  <div class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- NAV / HEADER -->
+    <header class="flex items-center justify-between gap-6">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-300 flex items-center justify-center text-white font-bold shadow-md">KA</div>
+        <div>
+          <h1 class="text-xl font-semibold">Kimberlyamber</h1>
+          <p class="text-sm text-muted-foreground text-slate-500">Rédactrice • Correctrice • Modératrice</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#exemples" class="hover:underline">Exemples</a>
+        <a href="#competences" class="hover:underline">Compétences</a>
+        <a href="#contact" class="px-4 py-2 bg-amber-400 text-white rounded-full shadow-sm hover:opacity-95">Contact</a>
+      </nav>
+
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md bg-white shadow">☰</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+      <!-- Texte -->
+      <div class="space-y-4">
+        <p class="text-sm text-amber-500 font-medium">Services professionnels — Disponible</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Je transforme vos idées en textes clairs, percutants et sans faute.</h2>
+        <p class="text-slate-600 max-w-xl">Rédaction web, correction orthotypographique, réécriture, optimisation SEO et modération de contenus. Plus de 10 ans d'expérience freelance pour des clients locaux et internationaux.</p>
+
+        <div class="flex items-center gap-4 mt-4">
+          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 bg-amber-400 text-white rounded-full shadow hover:opacity-95">✉️ Me contacter</a>
+          <a href="YOUR_COMEUP_LINK" target="_blank" class="text-sm text-slate-700 underline">Voir mes services sur ComeUp</a>
+        </div>
+
+        <div class="mt-6 text-sm text-slate-500 space-y-1">
+          <div><strong>Email:</strong> <a href="mailto:rabenarisoaando@gmail.com" class="underline">rabenarisoaando@gmail.com</a></div>
+          <div><strong>Téléphone:</strong> <a href="tel:+261330863532" class="underline">+261 33 08 635 32</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kimi-amber-86499564" target="_blank" class="underline">/in/kimi-amber-86499564</a></div>
+        </div>
+      </div>
+
+      <!-- Photo & Quick stats -->
+      <div class="relative">
+        <!-- Card -->
+        <div class="glass p-6 rounded-2xl shadow-lg flex flex-col items-center gap-4">
+          <!-- Replace profile.jpg with your file name placed in the same folder -->
+          <img src="profile.jpg" alt="Photo de Kimberlyamber" class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md" onerror="this.style.display='none'" />
+
+          <div class="text-center">
+            <h3 class="text-lg font-semibold">Rabenarisoa Andoniaina</h3>
+            <p class="text-sm text-slate-600">Rédactrice • Correctrice • Modératrice Web</p>
+          </div>
+
+          <div class="flex gap-4 mt-2">
+            <div class="text-center">
+              <p class="text-2xl font-bold">10+</p>
+              <p class="text-xs text-slate-500">ans d'expérience</p>
+            </div>
+            <div class="text-center">
+              <p class="text-2xl font-bold">3</p>
+              <p class="text-xs text-slate-500">langues</p>
+            </div>
+            <div class="text-center">
+              <p class="text-2xl font-bold">100%</p>
+              <p class="text-xs text-slate-500">satisfaction (visée)</p>
+            </div>
+          </div>
+
+          <div class="mt-4 w-full">
+            <a href="#services" class="block text-center px-4 py-2 bg-white text-amber-500 rounded-full font-medium shadow-sm">Mes services</a>
+          </div>
+        </div>
+
+        <!-- Decorative shape -->
+        <div class="hidden md:block absolute -right-10 -bottom-8 w-44 h-44 rounded-full bg-amber-200 opacity-50 blur-2xl"></div>
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="mt-16">
+      <h3 class="text-2xl font-semibold">Services</h3>
+      <p class="text-slate-600 mt-2 max-w-2xl">Je propose des prestations claires et adaptées : correction, réécriture, rédaction optimisée SEO et modération. Je travaille aussi sur des projets longs avec organisation et respect des délais.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="flex items-center gap-3 mb-3">
+            <i data-lucide="check-circle" class="w-6 h-6 text-amber-400"></i>
+            <h4 class="font-semibold">Correction Orthotypographique</h4>
+          </div>
+          <p class="text-sm text-slate-500">Orthographe, grammaire, ponctuation et cohérence stylistique.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="flex items-center gap-3 mb-3">
+            <i data-lucide="pen-tool" class="w-6 h-6 text-amber-400"></i>
+            <h4 class="font-semibold">Réécriture & Stylisation</h4>
+          </div>
+          <p class="text-sm text-slate-500">Amélioration du ton, de la fluidité et de la lisibilité.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <div class="flex items-center gap-3 mb-3">
+            <i data-lucide="globe" class="w-6 h-6 text-amber-400"></i>
+            <h4 class="font-semibold">Rédaction & SEO</h4>
+          </div>
+          <p class="text-sm text-slate-500">Contenu optimisé pour le web et structuré pour la conversion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXAMPLES / BEFORE AFTER -->
+    <section id="exemples" class="mt-16">
+      <h3 class="text-2xl font-semibold">Exemples Avant / Après</h3>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 bg-rose-50 rounded-xl">
+          <h4 class="font-semibold text-rose-600 mb-2">Avant</h4>
+          <p class="text-sm text-slate-600 italic">Le nouveau produit, il est vraiment super, et tout le monde devrait l'acheter. Les gens qui l'ont essayé ont dit que c'est le meilleur truc qu'ils aient jamais vu.</p>
+        </div>
+        <div class="p-6 bg-emerald-50 rounded-xl">
+          <h4 class="font-semibold text-emerald-600 mb-2">Après</h4>
+          <p class="text-sm text-slate-600 italic">Conçu pour exceller dans son domaine, notre produit répond aux attentes des utilisateurs et se positionne comme un choix de qualité. Découvrez ses bénéfices concrets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="mt-16">
+      <h3 class="text-2xl font-semibold">Compétences & Valeurs</h3>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><i data-lucide="layers" class="w-5 h-5 mt-1 text-amber-400"></i><div><strong>Organisation rigoureuse</strong><div class="text-sm text-slate-500">Gestion de projets et respect des délais</div></div></li>
+          <li class="flex items-start gap-3"><i data-lucide="megaphone" class="w-5 h-5 mt-1 text-amber-400"></i><div><strong>Communication</strong><div class="text-sm text-slate-500">Échanges clairs et transparents</div></div></li>
+          <li class="flex items-start gap-3"><i data-lucide="shield-check" class="w-5 h-5 mt-1 text-amber-400"></i><div><strong>Rigueur</strong><div class="text-sm text-slate-500">Respect strict des règles grammaticales</div></div></li>
+        </ul>
+        <div>
+          <h4 class="font-semibold">Langues</h4>
+          <p class="text-sm text-slate-500">Français (excellent) • Anglais (intermédiaire) • Espagnol (intermédiaire)</p>
+
+          <h4 class="mt-6 font-semibold">Valeurs</h4>
+          <p class="text-sm text-slate-500">Bienveillance • Confidentialité • Excellence • Respect des délais</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-16 mb-12 bg-gradient-to-r from-white to-amber-50 p-6 rounded-xl shadow">
+      <div class="md:flex md:items-center md:justify-between">
+        <div>
+          <h3 class="text-2xl font-semibold">Prêt(e) à travailler ensemble ?</h3>
+          <p class="text-slate-600">Contactez-moi pour une consultation gratuite et un devis personnalisé.</p>
+        </div>
+
+        <div class="mt-4 md:mt-0">
+          <a href="mailto:rabenarisoaando@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 bg-amber-400 text-white rounded-full shadow">✉️ Envoyer un e-mail</a>
+        </div>
+      </div>
+
+      <div class="mt-6 text-sm text-slate-600 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div><strong>Email</strong><div>rabenarisoaando@gmail.com</div></div>
+        <div><strong>Téléphone</strong><div>+261 33 08 635 32</div></div>
+        <div><strong>Lieu</strong><div>Ankorahotra, Madagascar</div></div>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm text-slate-500 py-6">
+      <div>© <strong>Kimberlyamber</strong> — Rédaction & Correction</div>
+      <div class="mt-2"><a href="#" class="underline">Mentions légales</a> • <a href="#" class="underline">Politique de confidentialité</a></div>
+    </footer>
+
+  </div>
+
+  <script>
+    // init lucide icons
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
+
+      // mobile menu (simple)
+      const btn = document.getElementById('mobileMenuBtn');
+      btn?.addEventListener('click', () => {
+        alert('Menu mobile — utilisez la navigation interne ou faites défiler la page.');
+      });
+    });
+  </script>
+</body>
+</html>
